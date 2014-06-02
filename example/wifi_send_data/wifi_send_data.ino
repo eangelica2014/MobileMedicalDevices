@@ -4,9 +4,8 @@
   Revision: 2.4
 
   Connection instructions:
-  * Data in on analog pin A3
-  * Black wire in gnd pin on analog side of board
-  * Red wire in analog pin 03
+  * Black wire in GND pin on analog side of board
+  * Red wire (data) in analog pin A3
   * Turn on serial monitor to view temperatures
 */
 
