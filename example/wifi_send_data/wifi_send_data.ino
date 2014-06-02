@@ -1,7 +1,6 @@
 /*
   Temperature Sensor for Arduino Mega
   Authors: M. Chow and R. Lasser
-  Revision: 2.4
 
   Connection instructions:
   * Black wire in GND pin on analog side of board
