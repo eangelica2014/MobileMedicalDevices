@@ -1,5 +1,20 @@
+/*
+  Temperature Sensor for Arduino Mega
+  Authors: M. Chow and R. Lasser
+  Revision: 2.4
+
+  Connection instructions:
+  * Data in on analog pin A3
+  * Black wire in gnd pin on analog side of board
+  * Red wire in analog pin 03
+  * Turn on serial monitor to view temperatures
+*/
+
 #include <WiFi.h>
 
+int temperatureSensorPin = 03; // the analog pin 3 on Arduino Mega
+                        // the resolution is 10 mV / degree centigrade
+                        
 // Initialize Wi-Fi client
 // More information at http://arduino.cc/en/Tutorial/WiFiWebClientRepeating
 WiFiClient client;
@@ -11,7 +26,7 @@ char pass[] = "PASSWORD_HERE";  // your network password
 int status = WL_IDLE_STATUS;     // the Wifi radio's status
 
 void setup() {
-  //Initialize serial and wait for port to open:
+  // Initialize the serial connection. Open serial monitor in IDE to view temps
   Serial.begin(9600);
   while (!Serial) {
     ; // wait for serial port to connect. Needed for Leonardo only
@@ -42,14 +57,23 @@ void setup() {
 }
 
 void loop() {
-  // For now: every 10 seconds, generate a random number between 1 and 110 and send it to web server
-  long temperature;
+  float temperature;
   String data;
+
+  // Get the voltage reading from the temperature sensor
+  int reading = analogRead(temperatureSensorPin);
   
-  // Generate random number
-  delay(10000);
-  randomSeed(analogRead(0));
-  temperature = random(1, 110);
+  /* 
+    Convert voltage conversion to temperature
+    0.1931 & 11.4759 constants from approximate temperature measurements of room temperature
+    of 64 degrees F and body temperature (under arm) of 97.6 degrees F.
+    Arduino Mega does a-to-d conversion from volts to int in range of 0 to 1023
+  */ 
+  temperature = 0.1931 * (float)reading + 11.4759; // convert to degrees F
+  
+  // DEBUGGING: print out the temperature to serial monitor
+  //Serial.print(temperature);
+  //Serial.println(" degrees F");
   data = "temperature=" + String(temperature);
   
   // Make connection to web application and post data
