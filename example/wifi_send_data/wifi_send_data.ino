@@ -11,7 +11,7 @@
 
 #include <WiFi.h>
 
-int temperatureSensorPin = 03; // the analog pin 3 on Arduino Mega
+int temperatureSensorPin = 3; // the analog pin 3 on Arduino Mega
                         // the resolution is 10 mV / degree centigrade
                         
 // Initialize Wi-Fi client
@@ -71,9 +71,11 @@ void loop() {
   temperature = 0.1931 * (float)reading + 11.4759; // convert to degrees F
   
   // DEBUGGING: print out the temperature to serial monitor
-  //Serial.print(temperature);
-  //Serial.println(" degrees F");
-  data = "temperature=" + String(temperature);
+  Serial.print(temperature);
+  Serial.println(" degrees F");
+  char tempFBuffer[6];
+  dtostrf(temperature, 6, 2, tempFBuffer);
+  data = "temperature=" + String(tempFBuffer);
   
   // Make connection to web application and post data
   client.stop();
@@ -92,6 +94,7 @@ void loop() {
   else {
     Serial.println("Whoops, something went wrong!");
   }
+  delay(10000);
 }
 
 void printWifiData() {
