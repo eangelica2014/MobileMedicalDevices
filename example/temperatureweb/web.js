@@ -51,7 +51,7 @@ app.get('/data.json', function(request, response) {
   response.header("Access-Control-Allow-Headers", "X-Requested-With");
 
   db.collection('temperatures', function(er, collection) {
-    collection.find().sort({"temperature":1}).toArray(function(err, docs) {
+    collection.find().sort({"created_at":1}).toArray(function(err, docs) {
       response.send(JSON.stringify(docs));
     });
   });
