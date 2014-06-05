@@ -24,7 +24,7 @@ app.post('/submit', function(request, response) {
   if (validator.isFloat(temperature)) {
     var toInsert = {
       "temperature": temperature,
-      "created_at": Date()
+      "created_at": Date.now()
     };
     db.collection('temperatures', function(er, collection) {
       var id = collection.insert(toInsert, function(err, saved) {
@@ -51,7 +51,7 @@ app.get('/data.json', function(request, response) {
   response.header("Access-Control-Allow-Headers", "X-Requested-With");
 
   db.collection('temperatures', function(er, collection) {
-    collection.find().toArray(function(err, docs) {
+    collection.find().sort({"temperature":1}).toArray(function(err, docs) {
       response.send(JSON.stringify(docs));
     });
   });
