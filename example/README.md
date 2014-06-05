@@ -1,6 +1,9 @@
 #Overview
 This system reads a temperature via temperature sensor that is connected to an Arduino.  The temperature is sent to a web application via Wi-Fi on the Arduino.  An iOS app pulls the data from the web application via JSON API and the temperatures are plotted on a graph.
 
+#The Setup
+![Setup](setup.jpg "The setup")
+
 #Requirements for Arduino
 1. Arduino (using Mega 2560)
 2. Arduino Wi-Fi Shield
