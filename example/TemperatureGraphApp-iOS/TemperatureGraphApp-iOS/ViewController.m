@@ -143,7 +143,7 @@
 {
     if(fieldEnum == CPTScatterPlotFieldX) {
         // Return x value
-        return [NSNumber numberWithInt: index];
+        return [NSNumber numberWithUnsignedInteger:index];
     } else {
         // Return y value
         NSDictionary *temp = [temperatures objectAtIndex:index];
