@@ -14,7 +14,6 @@ int main(int argc, const char * argv[]) {
     @autoreleasepool {
         Foo *example1 = [[Foo alloc]init];
         [example1 greetBy:@"Emily"];
-        example1.flavor = @"Vanilla";
         [example1 greetByFirstName:@"Ron" With:@"Soda Pop"];
     }
     return 0;
