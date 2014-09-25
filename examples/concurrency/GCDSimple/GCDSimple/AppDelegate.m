@@ -15,14 +15,23 @@
 @synthesize managedObjectModel = __managedObjectModel;
 @synthesize persistentStoreCoordinator = __persistentStoreCoordinator;
 
-void (^printFrom1To1000)(void) = ^{
+/*void (^printFrom1To1000)(void) = ^{
     NSUInteger counter = 0;
     for (counter = 1; counter <= 1000; counter++) {
         NSLog(@"Counter = %lu - Thread = %@",
               (unsigned long)counter,
               [NSThread currentThread]);
     }
-};
+};*/
+
+void printFrom1To1000 (void *paramContext) {
+    NSUInteger counter = 0;
+    for (counter = 1; counter <= 1000; counter++) {
+        NSLog(@"Counter = %lu - Thread = %@",
+              (unsigned long)counter,
+              [NSThread currentThread]);
+    }
+}
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
@@ -33,8 +42,11 @@ void (^printFrom1To1000)(void) = ^{
     
     dispatch_queue_t queue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);
     
-    dispatch_async(queue, printFrom1To1000);
-    dispatch_async(queue, printFrom1To1000);
+    /*dispatch_async(queue, printFrom1To1000);
+    dispatch_async(queue, printFrom1To1000);*/
+    dispatch_async_f(queue, NULL, printFrom1To1000);
+    dispatch_async_f(queue, NULL, printFrom1To1000);
+    dispatch_async_f(queue, NULL, printFrom1To1000);
     return YES;
 }
 
