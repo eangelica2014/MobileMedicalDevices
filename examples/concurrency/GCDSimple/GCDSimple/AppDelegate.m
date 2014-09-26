@@ -43,10 +43,34 @@ void printFrom1To1000 (void *paramContext) {
     dispatch_queue_t queue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);
     
     /*dispatch_async(queue, printFrom1To1000);
-    dispatch_async(queue, printFrom1To1000);*/
+    dispatch_async(queue, printFrom1To1000);
     dispatch_async_f(queue, NULL, printFrom1To1000);
     dispatch_async_f(queue, NULL, printFrom1To1000);
-    dispatch_async_f(queue, NULL, printFrom1To1000);
+    dispatch_async_f(queue, NULL, printFrom1To1000);*/
+    dispatch_async(queue, ^{
+        NSUInteger counter = 0;
+        for (counter = 1; counter <= 1000; counter++) {
+            NSLog(@"Counter = %lu - Thread = %@",
+                  (unsigned long)counter,
+                  [NSThread currentThread]);
+        }
+    });
+    dispatch_async(queue, ^{
+        NSUInteger counter = 0;
+        for (counter = 1; counter <= 1000; counter++) {
+            NSLog(@"Counter = %lu - Thread = %@",
+                  (unsigned long)counter,
+                  [NSThread currentThread]);
+        }
+    });
+    dispatch_async(queue, ^{
+        NSUInteger counter = 0;
+        for (counter = 1; counter <= 1000; counter++) {
+            NSLog(@"Counter = %lu - Thread = %@",
+                  (unsigned long)counter,
+                  [NSThread currentThread]);
+        }
+    });
     return YES;
 }
 
