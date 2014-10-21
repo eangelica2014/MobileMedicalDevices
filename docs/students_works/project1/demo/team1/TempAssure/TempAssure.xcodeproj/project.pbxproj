@@ -1,0 +1,588 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		21233C9F19CB4C0E0058BB31 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21233C9E19CB4C0E0058BB31 /* Foundation.framework */; };
+		21233CA119CB4C0E0058BB31 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21233CA019CB4C0E0058BB31 /* CoreGraphics.framework */; };
+		21233CA319CB4C0E0058BB31 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21233CA219CB4C0E0058BB31 /* UIKit.framework */; };
+		21233CA919CB4C0E0058BB31 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 21233CA719CB4C0E0058BB31 /* InfoPlist.strings */; };
+		21233CAB19CB4C0E0058BB31 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 21233CAA19CB4C0E0058BB31 /* main.m */; };
+		21233CAF19CB4C0E0058BB31 /* TAAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 21233CAE19CB4C0E0058BB31 /* TAAppDelegate.m */; };
+		21233CB219CB4C0F0058BB31 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 21233CB019CB4C0E0058BB31 /* Main_iPhone.storyboard */; };
+		21233CB519CB4C0F0058BB31 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 21233CB319CB4C0F0058BB31 /* Main_iPad.storyboard */; };
+		21233CB819CB4C0F0058BB31 /* TAViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 21233CB719CB4C0F0058BB31 /* TAViewController.m */; };
+		21233CBA19CB4C0F0058BB31 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 21233CB919CB4C0F0058BB31 /* Images.xcassets */; };
+		21233CC119CB4C0F0058BB31 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21233CC019CB4C0F0058BB31 /* XCTest.framework */; };
+		21233CC219CB4C0F0058BB31 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21233C9E19CB4C0E0058BB31 /* Foundation.framework */; };
+		21233CC319CB4C0F0058BB31 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21233CA219CB4C0E0058BB31 /* UIKit.framework */; };
+		21233CCB19CB4C0F0058BB31 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 21233CC919CB4C0F0058BB31 /* InfoPlist.strings */; };
+		21233CCD19CB4C0F0058BB31 /* TempAssureTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 21233CCC19CB4C0F0058BB31 /* TempAssureTests.m */; };
+		51596BAF19DCE0B300A0763A /* MMD_0016_Thermometer-Power.png in Resources */ = {isa = PBXBuildFile; fileRef = 51596BAC19DCE0B300A0763A /* MMD_0016_Thermometer-Power.png */; };
+		51596BB019DCE0B300A0763A /* MMD_0017_Restart.png in Resources */ = {isa = PBXBuildFile; fileRef = 51596BAD19DCE0B300A0763A /* MMD_0017_Restart.png */; };
+		51596BB119DCE0B300A0763A /* Separator.png in Resources */ = {isa = PBXBuildFile; fileRef = 51596BAE19DCE0B300A0763A /* Separator.png */; };
+		51E6890819D12368004E32A8 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51E6890719D12368004E32A8 /* AVFoundation.framework */; };
+		51E6890A19D12894004E32A8 /* alarm.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 51E6890919D12894004E32A8 /* alarm.mp3 */; };
+		589D491519D4E43800A3885D /* BG1.png in Resources */ = {isa = PBXBuildFile; fileRef = 589D491419D4E43800A3885D /* BG1.png */; };
+		589D491D19D4E80400A3885D /* TempAssure3.png in Resources */ = {isa = PBXBuildFile; fileRef = 589D491C19D4E80400A3885D /* TempAssure3.png */; };
+		589D492819D8EB9200A3885D /* MMD_0000_LowerThirdBG.png in Resources */ = {isa = PBXBuildFile; fileRef = 589D492519D8EB9200A3885D /* MMD_0000_LowerThirdBG.png */; };
+		589D492A19D8EB9200A3885D /* MMD_0002_Everything.png in Resources */ = {isa = PBXBuildFile; fileRef = 589D492719D8EB9200A3885D /* MMD_0002_Everything.png */; };
+		589D493119D9BAA600A3885D /* MMD_0005_F_C.png in Resources */ = {isa = PBXBuildFile; fileRef = 589D492F19D9BAA600A3885D /* MMD_0005_F_C.png */; };
+		589D493219D9BAA600A3885D /* MMD_0006_C_F.png in Resources */ = {isa = PBXBuildFile; fileRef = 589D493019D9BAA600A3885D /* MMD_0006_C_F.png */; };
+		589D493819D9C29D00A3885D /* MMD_0008_AlarmOff.png in Resources */ = {isa = PBXBuildFile; fileRef = 589D493719D9C29D00A3885D /* MMD_0008_AlarmOff.png */; };
+		589D493A19D9C2C500A3885D /* MMD_0007_AlarmOn.png in Resources */ = {isa = PBXBuildFile; fileRef = 589D493919D9C2C500A3885D /* MMD_0007_AlarmOn.png */; };
+		589D494319D9F7A300A3885D /* MMD_0012_battery1BG.png in Resources */ = {isa = PBXBuildFile; fileRef = 589D493F19D9F7A300A3885D /* MMD_0012_battery1BG.png */; };
+		589D494419D9F7A300A3885D /* MMD_0010_battery3BG.png in Resources */ = {isa = PBXBuildFile; fileRef = 589D494019D9F7A300A3885D /* MMD_0010_battery3BG.png */; };
+		589D494519D9F7A300A3885D /* MMD_0011_battery2BG.png in Resources */ = {isa = PBXBuildFile; fileRef = 589D494119D9F7A300A3885D /* MMD_0011_battery2BG.png */; };
+		589D494619D9F7A300A3885D /* MMD_0009_battery4BG.png in Resources */ = {isa = PBXBuildFile; fileRef = 589D494219D9F7A300A3885D /* MMD_0009_battery4BG.png */; };
+		589D494819DA01DF00A3885D /* MMD_0001_BG.png in Resources */ = {isa = PBXBuildFile; fileRef = 589D494719DA01DF00A3885D /* MMD_0001_BG.png */; };
+		589D494C19DA1B5600A3885D /* MMD_0013_Logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 589D494B19DA1B5600A3885D /* MMD_0013_Logo.png */; };
+		58F21B3D19DB83E6005CFB2E /* MMD_0003_Alarm-Off-Banner.png in Resources */ = {isa = PBXBuildFile; fileRef = 58F21B3B19DB83E6005CFB2E /* MMD_0003_Alarm-Off-Banner.png */; };
+		58F21B3E19DB83E6005CFB2E /* MMD_0004_Alarm-On-Banner.png in Resources */ = {isa = PBXBuildFile; fileRef = 58F21B3C19DB83E6005CFB2E /* MMD_0004_Alarm-On-Banner.png */; };
+		58F21B4119DB87A6005CFB2E /* MMD_0014_Cancel-Alarm.png in Resources */ = {isa = PBXBuildFile; fileRef = 58F21B3F19DB87A6005CFB2E /* MMD_0014_Cancel-Alarm.png */; };
+		58F21B4219DB87A6005CFB2E /* MMD_0015_Set-Alarm.png in Resources */ = {isa = PBXBuildFile; fileRef = 58F21B4019DB87A6005CFB2E /* MMD_0015_Set-Alarm.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		21233CC419CB4C0F0058BB31 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 21233C9319CB4C0E0058BB31 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 21233C9A19CB4C0E0058BB31;
+			remoteInfo = TempAssure;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		21233C9B19CB4C0E0058BB31 /* TempAssure.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TempAssure.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		21233C9E19CB4C0E0058BB31 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		21233CA019CB4C0E0058BB31 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		21233CA219CB4C0E0058BB31 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		21233CA619CB4C0E0058BB31 /* TempAssure-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TempAssure-Info.plist"; sourceTree = "<group>"; };
+		21233CA819CB4C0E0058BB31 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		21233CAA19CB4C0E0058BB31 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		21233CAC19CB4C0E0058BB31 /* TempAssure-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TempAssure-Prefix.pch"; sourceTree = "<group>"; };
+		21233CAD19CB4C0E0058BB31 /* TAAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TAAppDelegate.h; sourceTree = "<group>"; };
+		21233CAE19CB4C0E0058BB31 /* TAAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TAAppDelegate.m; sourceTree = "<group>"; };
+		21233CB119CB4C0F0058BB31 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
+		21233CB419CB4C0F0058BB31 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
+		21233CB619CB4C0F0058BB31 /* TAViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TAViewController.h; sourceTree = "<group>"; };
+		21233CB719CB4C0F0058BB31 /* TAViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TAViewController.m; sourceTree = "<group>"; };
+		21233CB919CB4C0F0058BB31 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		21233CBF19CB4C0F0058BB31 /* TempAssureTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TempAssureTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		21233CC019CB4C0F0058BB31 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		21233CC819CB4C0F0058BB31 /* TempAssureTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TempAssureTests-Info.plist"; sourceTree = "<group>"; };
+		21233CCA19CB4C0F0058BB31 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		21233CCC19CB4C0F0058BB31 /* TempAssureTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TempAssureTests.m; sourceTree = "<group>"; };
+		51596BAC19DCE0B300A0763A /* MMD_0016_Thermometer-Power.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MMD_0016_Thermometer-Power.png"; sourceTree = "<group>"; };
+		51596BAD19DCE0B300A0763A /* MMD_0017_Restart.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MMD_0017_Restart.png; sourceTree = "<group>"; };
+		51596BAE19DCE0B300A0763A /* Separator.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Separator.png; sourceTree = "<group>"; };
+		51E6890719D12368004E32A8 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		51E6890919D12894004E32A8 /* alarm.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = alarm.mp3; sourceTree = "<group>"; };
+		589D491419D4E43800A3885D /* BG1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BG1.png; sourceTree = "<group>"; };
+		589D491C19D4E80400A3885D /* TempAssure3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TempAssure3.png; sourceTree = "<group>"; };
+		589D492519D8EB9200A3885D /* MMD_0000_LowerThirdBG.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MMD_0000_LowerThirdBG.png; sourceTree = "<group>"; };
+		589D492719D8EB9200A3885D /* MMD_0002_Everything.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MMD_0002_Everything.png; sourceTree = "<group>"; };
+		589D492F19D9BAA600A3885D /* MMD_0005_F_C.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MMD_0005_F_C.png; sourceTree = "<group>"; };
+		589D493019D9BAA600A3885D /* MMD_0006_C_F.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MMD_0006_C_F.png; sourceTree = "<group>"; };
+		589D493719D9C29D00A3885D /* MMD_0008_AlarmOff.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MMD_0008_AlarmOff.png; sourceTree = "<group>"; };
+		589D493919D9C2C500A3885D /* MMD_0007_AlarmOn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MMD_0007_AlarmOn.png; sourceTree = "<group>"; };
+		589D493F19D9F7A300A3885D /* MMD_0012_battery1BG.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MMD_0012_battery1BG.png; sourceTree = "<group>"; };
+		589D494019D9F7A300A3885D /* MMD_0010_battery3BG.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MMD_0010_battery3BG.png; sourceTree = "<group>"; };
+		589D494119D9F7A300A3885D /* MMD_0011_battery2BG.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MMD_0011_battery2BG.png; sourceTree = "<group>"; };
+		589D494219D9F7A300A3885D /* MMD_0009_battery4BG.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MMD_0009_battery4BG.png; sourceTree = "<group>"; };
+		589D494719DA01DF00A3885D /* MMD_0001_BG.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = MMD_0001_BG.png; path = ../MMD_0001_BG.png; sourceTree = "<group>"; };
+		589D494B19DA1B5600A3885D /* MMD_0013_Logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = MMD_0013_Logo.png; path = ../MMD_0013_Logo.png; sourceTree = "<group>"; };
+		58F21B3B19DB83E6005CFB2E /* MMD_0003_Alarm-Off-Banner.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "MMD_0003_Alarm-Off-Banner.png"; path = "../MMD_0003_Alarm-Off-Banner.png"; sourceTree = "<group>"; };
+		58F21B3C19DB83E6005CFB2E /* MMD_0004_Alarm-On-Banner.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "MMD_0004_Alarm-On-Banner.png"; path = "../MMD_0004_Alarm-On-Banner.png"; sourceTree = "<group>"; };
+		58F21B3F19DB87A6005CFB2E /* MMD_0014_Cancel-Alarm.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MMD_0014_Cancel-Alarm.png"; sourceTree = "<group>"; };
+		58F21B4019DB87A6005CFB2E /* MMD_0015_Set-Alarm.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MMD_0015_Set-Alarm.png"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		21233C9819CB4C0E0058BB31 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				51E6890819D12368004E32A8 /* AVFoundation.framework in Frameworks */,
+				21233CA119CB4C0E0058BB31 /* CoreGraphics.framework in Frameworks */,
+				21233CA319CB4C0E0058BB31 /* UIKit.framework in Frameworks */,
+				21233C9F19CB4C0E0058BB31 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		21233CBC19CB4C0F0058BB31 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				21233CC119CB4C0F0058BB31 /* XCTest.framework in Frameworks */,
+				21233CC319CB4C0F0058BB31 /* UIKit.framework in Frameworks */,
+				21233CC219CB4C0F0058BB31 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		21233C9219CB4C0E0058BB31 = {
+			isa = PBXGroup;
+			children = (
+				21233CA419CB4C0E0058BB31 /* TempAssure */,
+				21233CC619CB4C0F0058BB31 /* TempAssureTests */,
+				21233C9D19CB4C0E0058BB31 /* Frameworks */,
+				21233C9C19CB4C0E0058BB31 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		21233C9C19CB4C0E0058BB31 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				21233C9B19CB4C0E0058BB31 /* TempAssure.app */,
+				21233CBF19CB4C0F0058BB31 /* TempAssureTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		21233C9D19CB4C0E0058BB31 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				51E6890719D12368004E32A8 /* AVFoundation.framework */,
+				21233C9E19CB4C0E0058BB31 /* Foundation.framework */,
+				21233CA019CB4C0E0058BB31 /* CoreGraphics.framework */,
+				21233CA219CB4C0E0058BB31 /* UIKit.framework */,
+				21233CC019CB4C0F0058BB31 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		21233CA419CB4C0E0058BB31 /* TempAssure */ = {
+			isa = PBXGroup;
+			children = (
+				21233CAD19CB4C0E0058BB31 /* TAAppDelegate.h */,
+				21233CAE19CB4C0E0058BB31 /* TAAppDelegate.m */,
+				21233CB319CB4C0F0058BB31 /* Main_iPad.storyboard */,
+				21233CB619CB4C0F0058BB31 /* TAViewController.h */,
+				21233CB719CB4C0F0058BB31 /* TAViewController.m */,
+				21233CB019CB4C0E0058BB31 /* Main_iPhone.storyboard */,
+				589D492419D8EB5000A3885D /* UIAssets */,
+				21233CB919CB4C0F0058BB31 /* Images.xcassets */,
+				21233CA519CB4C0E0058BB31 /* Supporting Files */,
+			);
+			path = TempAssure;
+			sourceTree = "<group>";
+		};
+		21233CA519CB4C0E0058BB31 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				51E6890919D12894004E32A8 /* alarm.mp3 */,
+				21233CA619CB4C0E0058BB31 /* TempAssure-Info.plist */,
+				21233CA719CB4C0E0058BB31 /* InfoPlist.strings */,
+				21233CAA19CB4C0E0058BB31 /* main.m */,
+				21233CAC19CB4C0E0058BB31 /* TempAssure-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		21233CC619CB4C0F0058BB31 /* TempAssureTests */ = {
+			isa = PBXGroup;
+			children = (
+				21233CCC19CB4C0F0058BB31 /* TempAssureTests.m */,
+				21233CC719CB4C0F0058BB31 /* Supporting Files */,
+			);
+			path = TempAssureTests;
+			sourceTree = "<group>";
+		};
+		21233CC719CB4C0F0058BB31 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				21233CC819CB4C0F0058BB31 /* TempAssureTests-Info.plist */,
+				21233CC919CB4C0F0058BB31 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		589D492419D8EB5000A3885D /* UIAssets */ = {
+			isa = PBXGroup;
+			children = (
+				51596BAC19DCE0B300A0763A /* MMD_0016_Thermometer-Power.png */,
+				51596BAD19DCE0B300A0763A /* MMD_0017_Restart.png */,
+				51596BAE19DCE0B300A0763A /* Separator.png */,
+				58F21B3F19DB87A6005CFB2E /* MMD_0014_Cancel-Alarm.png */,
+				58F21B4019DB87A6005CFB2E /* MMD_0015_Set-Alarm.png */,
+				58F21B3B19DB83E6005CFB2E /* MMD_0003_Alarm-Off-Banner.png */,
+				58F21B3C19DB83E6005CFB2E /* MMD_0004_Alarm-On-Banner.png */,
+				589D494B19DA1B5600A3885D /* MMD_0013_Logo.png */,
+				589D494719DA01DF00A3885D /* MMD_0001_BG.png */,
+				589D493F19D9F7A300A3885D /* MMD_0012_battery1BG.png */,
+				589D494119D9F7A300A3885D /* MMD_0011_battery2BG.png */,
+				589D494019D9F7A300A3885D /* MMD_0010_battery3BG.png */,
+				589D494219D9F7A300A3885D /* MMD_0009_battery4BG.png */,
+				589D491C19D4E80400A3885D /* TempAssure3.png */,
+				589D491419D4E43800A3885D /* BG1.png */,
+				589D493919D9C2C500A3885D /* MMD_0007_AlarmOn.png */,
+				589D493719D9C29D00A3885D /* MMD_0008_AlarmOff.png */,
+				589D492F19D9BAA600A3885D /* MMD_0005_F_C.png */,
+				589D493019D9BAA600A3885D /* MMD_0006_C_F.png */,
+				589D492719D8EB9200A3885D /* MMD_0002_Everything.png */,
+				589D492519D8EB9200A3885D /* MMD_0000_LowerThirdBG.png */,
+			);
+			name = UIAssets;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		21233C9A19CB4C0E0058BB31 /* TempAssure */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 21233CD019CB4C0F0058BB31 /* Build configuration list for PBXNativeTarget "TempAssure" */;
+			buildPhases = (
+				21233C9719CB4C0E0058BB31 /* Sources */,
+				21233C9819CB4C0E0058BB31 /* Frameworks */,
+				21233C9919CB4C0E0058BB31 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TempAssure;
+			productName = TempAssure;
+			productReference = 21233C9B19CB4C0E0058BB31 /* TempAssure.app */;
+			productType = "com.apple.product-type.application";
+		};
+		21233CBE19CB4C0F0058BB31 /* TempAssureTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 21233CD319CB4C0F0058BB31 /* Build configuration list for PBXNativeTarget "TempAssureTests" */;
+			buildPhases = (
+				21233CBB19CB4C0F0058BB31 /* Sources */,
+				21233CBC19CB4C0F0058BB31 /* Frameworks */,
+				21233CBD19CB4C0F0058BB31 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				21233CC519CB4C0F0058BB31 /* PBXTargetDependency */,
+			);
+			name = TempAssureTests;
+			productName = TempAssureTests;
+			productReference = 21233CBF19CB4C0F0058BB31 /* TempAssureTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		21233C9319CB4C0E0058BB31 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = TA;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Alexander Henry";
+				TargetAttributes = {
+					21233CBE19CB4C0F0058BB31 = {
+						TestTargetID = 21233C9A19CB4C0E0058BB31;
+					};
+				};
+			};
+			buildConfigurationList = 21233C9619CB4C0E0058BB31 /* Build configuration list for PBXProject "TempAssure" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 21233C9219CB4C0E0058BB31;
+			productRefGroup = 21233C9C19CB4C0E0058BB31 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				21233C9A19CB4C0E0058BB31 /* TempAssure */,
+				21233CBE19CB4C0F0058BB31 /* TempAssureTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		21233C9919CB4C0E0058BB31 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				589D491519D4E43800A3885D /* BG1.png in Resources */,
+				589D493819D9C29D00A3885D /* MMD_0008_AlarmOff.png in Resources */,
+				51596BAF19DCE0B300A0763A /* MMD_0016_Thermometer-Power.png in Resources */,
+				589D494619D9F7A300A3885D /* MMD_0009_battery4BG.png in Resources */,
+				21233CB519CB4C0F0058BB31 /* Main_iPad.storyboard in Resources */,
+				51596BB119DCE0B300A0763A /* Separator.png in Resources */,
+				589D494419D9F7A300A3885D /* MMD_0010_battery3BG.png in Resources */,
+				589D492819D8EB9200A3885D /* MMD_0000_LowerThirdBG.png in Resources */,
+				21233CBA19CB4C0F0058BB31 /* Images.xcassets in Resources */,
+				589D494819DA01DF00A3885D /* MMD_0001_BG.png in Resources */,
+				589D494519D9F7A300A3885D /* MMD_0011_battery2BG.png in Resources */,
+				589D494319D9F7A300A3885D /* MMD_0012_battery1BG.png in Resources */,
+				21233CB219CB4C0F0058BB31 /* Main_iPhone.storyboard in Resources */,
+				589D494C19DA1B5600A3885D /* MMD_0013_Logo.png in Resources */,
+				58F21B4219DB87A6005CFB2E /* MMD_0015_Set-Alarm.png in Resources */,
+				589D493219D9BAA600A3885D /* MMD_0006_C_F.png in Resources */,
+				51596BB019DCE0B300A0763A /* MMD_0017_Restart.png in Resources */,
+				589D493A19D9C2C500A3885D /* MMD_0007_AlarmOn.png in Resources */,
+				589D492A19D8EB9200A3885D /* MMD_0002_Everything.png in Resources */,
+				58F21B3E19DB83E6005CFB2E /* MMD_0004_Alarm-On-Banner.png in Resources */,
+				589D493119D9BAA600A3885D /* MMD_0005_F_C.png in Resources */,
+				21233CA919CB4C0E0058BB31 /* InfoPlist.strings in Resources */,
+				589D491D19D4E80400A3885D /* TempAssure3.png in Resources */,
+				51E6890A19D12894004E32A8 /* alarm.mp3 in Resources */,
+				58F21B3D19DB83E6005CFB2E /* MMD_0003_Alarm-Off-Banner.png in Resources */,
+				58F21B4119DB87A6005CFB2E /* MMD_0014_Cancel-Alarm.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		21233CBD19CB4C0F0058BB31 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				21233CCB19CB4C0F0058BB31 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		21233C9719CB4C0E0058BB31 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				21233CB819CB4C0F0058BB31 /* TAViewController.m in Sources */,
+				21233CAB19CB4C0E0058BB31 /* main.m in Sources */,
+				21233CAF19CB4C0E0058BB31 /* TAAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		21233CBB19CB4C0F0058BB31 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				21233CCD19CB4C0F0058BB31 /* TempAssureTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		21233CC519CB4C0F0058BB31 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 21233C9A19CB4C0E0058BB31 /* TempAssure */;
+			targetProxy = 21233CC419CB4C0F0058BB31 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		21233CA719CB4C0E0058BB31 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				21233CA819CB4C0E0058BB31 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		21233CB019CB4C0E0058BB31 /* Main_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				21233CB119CB4C0F0058BB31 /* Base */,
+			);
+			name = Main_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		21233CB319CB4C0F0058BB31 /* Main_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				21233CB419CB4C0F0058BB31 /* Base */,
+			);
+			name = Main_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+		21233CC919CB4C0F0058BB31 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				21233CCA19CB4C0F0058BB31 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		21233CCE19CB4C0F0058BB31 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		21233CCF19CB4C0F0058BB31 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		21233CD119CB4C0F0058BB31 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TempAssure/TempAssure-Prefix.pch";
+				INFOPLIST_FILE = "TempAssure/TempAssure-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		21233CD219CB4C0F0058BB31 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TempAssure/TempAssure-Prefix.pch";
+				INFOPLIST_FILE = "TempAssure/TempAssure-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		21233CD419CB4C0F0058BB31 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/TempAssure.app/TempAssure";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TempAssure/TempAssure-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "TempAssureTests/TempAssureTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		21233CD519CB4C0F0058BB31 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/TempAssure.app/TempAssure";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TempAssure/TempAssure-Prefix.pch";
+				INFOPLIST_FILE = "TempAssureTests/TempAssureTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		21233C9619CB4C0E0058BB31 /* Build configuration list for PBXProject "TempAssure" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				21233CCE19CB4C0F0058BB31 /* Debug */,
+				21233CCF19CB4C0F0058BB31 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		21233CD019CB4C0F0058BB31 /* Build configuration list for PBXNativeTarget "TempAssure" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				21233CD119CB4C0F0058BB31 /* Debug */,
+				21233CD219CB4C0F0058BB31 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		21233CD319CB4C0F0058BB31 /* Build configuration list for PBXNativeTarget "TempAssureTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				21233CD419CB4C0F0058BB31 /* Debug */,
+				21233CD519CB4C0F0058BB31 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 21233C9319CB4C0E0058BB31 /* Project object */;
+}
