@@ -1,0 +1,593 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		940BDFB91A2FE77400BF84FC /* Spo2graphdata.csv in Resources */ = {isa = PBXBuildFile; fileRef = 940BDFB81A2FE77400BF84FC /* Spo2graphdata.csv */; };
+		940BDFBF1A2FF4BF00BF84FC /* EKG.csv in Resources */ = {isa = PBXBuildFile; fileRef = 940BDFBE1A2FF4BF00BF84FC /* EKG.csv */; };
+		940BDFC51A30BA8F00BF84FC /* expandicon.png in Resources */ = {isa = PBXBuildFile; fileRef = 940BDFC41A30BA8F00BF84FC /* expandicon.png */; };
+		940BDFC71A30BA9900BF84FC /* shrinkicon.png in Resources */ = {isa = PBXBuildFile; fileRef = 940BDFC61A30BA9900BF84FC /* shrinkicon.png */; };
+		941679FE1A0AED2700861407 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 941679FD1A0AED2700861407 /* main.m */; };
+		94167A011A0AED2700861407 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 94167A001A0AED2700861407 /* AppDelegate.m */; };
+		94167A041A0AED2700861407 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 94167A031A0AED2700861407 /* ViewController.m */; };
+		94167A071A0AED2700861407 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94167A051A0AED2700861407 /* Main.storyboard */; };
+		94167A091A0AED2700861407 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 94167A081A0AED2700861407 /* Images.xcassets */; };
+		94167A0C1A0AED2700861407 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 94167A0A1A0AED2700861407 /* LaunchScreen.xib */; };
+		94167A181A0AED2700861407 /* Patient_MonitorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 94167A171A0AED2700861407 /* Patient_MonitorTests.m */; };
+		94167A221A0AF19C00861407 /* placeholder.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 94167A211A0AF19C00861407 /* placeholder.jpg */; };
+		9426E6EF1A1DF29900F42C83 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9426E6EE1A1DF29900F42C83 /* QuartzCore.framework */; };
+		9429844A1A218C8300AC1028 /* Graph.m in Sources */ = {isa = PBXBuildFile; fileRef = 942984491A218C8300AC1028 /* Graph.m */; };
+		9429C16B1A2F5FDF001291D4 /* alarmonIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 9429C16A1A2F5FDF001291D4 /* alarmonIcon.png */; };
+		9429C1701A2F5FF7001291D4 /* bloodpressicon.png in Resources */ = {isa = PBXBuildFile; fileRef = 9429C16F1A2F5FF7001291D4 /* bloodpressicon.png */; };
+		9429C1721A2F6014001291D4 /* editicon.png in Resources */ = {isa = PBXBuildFile; fileRef = 9429C1711A2F6014001291D4 /* editicon.png */; };
+		9429C1761A2F6040001291D4 /* faranheiticon.png in Resources */ = {isa = PBXBuildFile; fileRef = 9429C1751A2F6040001291D4 /* faranheiticon.png */; };
+		9429C1781A2F604E001291D4 /* pulseicon.png in Resources */ = {isa = PBXBuildFile; fileRef = 9429C1771A2F604E001291D4 /* pulseicon.png */; };
+		9429C17A1A2F60A0001291D4 /* settingsicon.png in Resources */ = {isa = PBXBuildFile; fileRef = 9429C1791A2F60A0001291D4 /* settingsicon.png */; };
+		9429C17F1A2F60C1001291D4 /* SpO2icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 9429C17D1A2F60C1001291D4 /* SpO2icon.png */; };
+		9429C1801A2F60C1001291D4 /* thermometericon.png in Resources */ = {isa = PBXBuildFile; fileRef = 9429C17E1A2F60C1001291D4 /* thermometericon.png */; };
+		9429C1821A2F6265001291D4 /* ekgicon.png in Resources */ = {isa = PBXBuildFile; fileRef = 9429C1811A2F6265001291D4 /* ekgicon.png */; };
+		945CD0071A2E186E001E9214 /* AlarmOptions.m in Sources */ = {isa = PBXBuildFile; fileRef = 945CD0061A2E186E001E9214 /* AlarmOptions.m */; };
+		945D31501A0BD253009712FC /* ekg.png in Resources */ = {isa = PBXBuildFile; fileRef = 945D314F1A0BD253009712FC /* ekg.png */; };
+		945D31521A0BD69E009712FC /* spo2.png in Resources */ = {isa = PBXBuildFile; fileRef = 945D31511A0BD69E009712FC /* spo2.png */; };
+		945D31541A0BD87F009712FC /* black.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 945D31531A0BD87F009712FC /* black.jpg */; };
+		945E6F651A242490009923F4 /* TheData.m in Sources */ = {isa = PBXBuildFile; fileRef = 945E6F631A242490009923F4 /* TheData.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		940D95761A1E4E1F00CEA9DE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 940D95701A1E4E1F00CEA9DE /* CorePlot.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8DC2EF5B0486A6940098B216;
+			remoteInfo = CorePlot;
+		};
+		940D95781A1E4E1F00CEA9DE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 940D95701A1E4E1F00CEA9DE /* CorePlot.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 0730F600109492D800E95162;
+			remoteInfo = UnitTests;
+		};
+		94167A121A0AED2700861407 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 941679F01A0AED2700861407 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 941679F71A0AED2700861407;
+			remoteInfo = "Patient Monitor";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		940BDFB81A2FE77400BF84FC /* Spo2graphdata.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Spo2graphdata.csv; sourceTree = "<group>"; };
+		940BDFBD1A2FF41100BF84FC /* DemoData.csv */ = {isa = PBXFileReference; lastKnownFileType = file; path = DemoData.csv; sourceTree = "<group>"; };
+		940BDFBE1A2FF4BF00BF84FC /* EKG.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = EKG.csv; sourceTree = "<group>"; };
+		940BDFC41A30BA8F00BF84FC /* expandicon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = expandicon.png; sourceTree = "<group>"; };
+		940BDFC61A30BA9900BF84FC /* shrinkicon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = shrinkicon.png; sourceTree = "<group>"; };
+		940D95701A1E4E1F00CEA9DE /* CorePlot.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CorePlot.xcodeproj; path = "../../../../../../Downloads/core-plot-master/framework/CorePlot.xcodeproj"; sourceTree = "<group>"; };
+		941679F81A0AED2700861407 /* Patient Monitor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Patient Monitor.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		941679FC1A0AED2700861407 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		941679FD1A0AED2700861407 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		941679FF1A0AED2700861407 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		94167A001A0AED2700861407 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		94167A021A0AED2700861407 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		94167A031A0AED2700861407 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		94167A061A0AED2700861407 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		94167A081A0AED2700861407 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		94167A0B1A0AED2700861407 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		94167A111A0AED2700861407 /* Patient MonitorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Patient MonitorTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		94167A161A0AED2700861407 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		94167A171A0AED2700861407 /* Patient_MonitorTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Patient_MonitorTests.m; sourceTree = "<group>"; };
+		94167A211A0AF19C00861407 /* placeholder.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = placeholder.jpg; sourceTree = "<group>"; };
+		94167A241A0AFAB400861407 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file; name = Base; path = Base.lproj/pulseicon.psd; sourceTree = "<group>"; };
+		9426E6EE1A1DF29900F42C83 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		942984481A218C8300AC1028 /* Graph.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Graph.h; sourceTree = "<group>"; };
+		942984491A218C8300AC1028 /* Graph.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Graph.m; sourceTree = "<group>"; };
+		9429C16A1A2F5FDF001291D4 /* alarmonIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = alarmonIcon.png; sourceTree = "<group>"; };
+		9429C16F1A2F5FF7001291D4 /* bloodpressicon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bloodpressicon.png; sourceTree = "<group>"; };
+		9429C1711A2F6014001291D4 /* editicon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = editicon.png; sourceTree = "<group>"; };
+		9429C1751A2F6040001291D4 /* faranheiticon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = faranheiticon.png; sourceTree = "<group>"; };
+		9429C1771A2F604E001291D4 /* pulseicon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pulseicon.png; sourceTree = "<group>"; };
+		9429C1791A2F60A0001291D4 /* settingsicon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = settingsicon.png; sourceTree = "<group>"; };
+		9429C17D1A2F60C1001291D4 /* SpO2icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SpO2icon.png; sourceTree = "<group>"; };
+		9429C17E1A2F60C1001291D4 /* thermometericon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = thermometericon.png; sourceTree = "<group>"; };
+		9429C1811A2F6265001291D4 /* ekgicon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ekgicon.png; sourceTree = "<group>"; };
+		945CD0061A2E186E001E9214 /* AlarmOptions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlarmOptions.m; sourceTree = "<group>"; };
+		945CD0081A2E18AA001E9214 /* AlarmOptions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AlarmOptions.h; sourceTree = "<group>"; };
+		945D314F1A0BD253009712FC /* ekg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ekg.png; sourceTree = "<group>"; };
+		945D31511A0BD69E009712FC /* spo2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = spo2.png; sourceTree = "<group>"; };
+		945D31531A0BD87F009712FC /* black.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = black.jpg; sourceTree = "<group>"; };
+		945E6F621A242490009923F4 /* TheData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TheData.h; sourceTree = "<group>"; };
+		945E6F631A242490009923F4 /* TheData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TheData.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		941679F51A0AED2700861407 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9426E6EF1A1DF29900F42C83 /* QuartzCore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		94167A0E1A0AED2700861407 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		940D95711A1E4E1F00CEA9DE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				940D95771A1E4E1F00CEA9DE /* CorePlot.framework */,
+				940D95791A1E4E1F00CEA9DE /* UnitTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		941679EF1A0AED2700861407 = {
+			isa = PBXGroup;
+			children = (
+				940D95701A1E4E1F00CEA9DE /* CorePlot.xcodeproj */,
+				9426E6EE1A1DF29900F42C83 /* QuartzCore.framework */,
+				941679FA1A0AED2700861407 /* Patient Monitor */,
+				94167A141A0AED2700861407 /* Patient MonitorTests */,
+				941679F91A0AED2700861407 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		941679F91A0AED2700861407 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				941679F81A0AED2700861407 /* Patient Monitor.app */,
+				94167A111A0AED2700861407 /* Patient MonitorTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		941679FA1A0AED2700861407 /* Patient Monitor */ = {
+			isa = PBXGroup;
+			children = (
+				941679FF1A0AED2700861407 /* AppDelegate.h */,
+				94167A001A0AED2700861407 /* AppDelegate.m */,
+				94167A021A0AED2700861407 /* ViewController.h */,
+				94167A031A0AED2700861407 /* ViewController.m */,
+				945CD0061A2E186E001E9214 /* AlarmOptions.m */,
+				945CD0081A2E18AA001E9214 /* AlarmOptions.h */,
+				945E6F621A242490009923F4 /* TheData.h */,
+				945E6F631A242490009923F4 /* TheData.m */,
+				942984481A218C8300AC1028 /* Graph.h */,
+				942984491A218C8300AC1028 /* Graph.m */,
+				94167A051A0AED2700861407 /* Main.storyboard */,
+				94167A081A0AED2700861407 /* Images.xcassets */,
+				94167A0A1A0AED2700861407 /* LaunchScreen.xib */,
+				941679FB1A0AED2700861407 /* Supporting Files */,
+			);
+			path = "Patient Monitor";
+			sourceTree = "<group>";
+		};
+		941679FB1A0AED2700861407 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				940BDFBD1A2FF41100BF84FC /* DemoData.csv */,
+				940BDFB81A2FE77400BF84FC /* Spo2graphdata.csv */,
+				940BDFBE1A2FF4BF00BF84FC /* EKG.csv */,
+				9429C1711A2F6014001291D4 /* editicon.png */,
+				9429C16F1A2F5FF7001291D4 /* bloodpressicon.png */,
+				9429C1751A2F6040001291D4 /* faranheiticon.png */,
+				940BDFC41A30BA8F00BF84FC /* expandicon.png */,
+				9429C16A1A2F5FDF001291D4 /* alarmonIcon.png */,
+				9429C1791A2F60A0001291D4 /* settingsicon.png */,
+				940BDFC61A30BA9900BF84FC /* shrinkicon.png */,
+				945D31531A0BD87F009712FC /* black.jpg */,
+				9429C1771A2F604E001291D4 /* pulseicon.png */,
+				9429C1811A2F6265001291D4 /* ekgicon.png */,
+				9429C17D1A2F60C1001291D4 /* SpO2icon.png */,
+				9429C17E1A2F60C1001291D4 /* thermometericon.png */,
+				945D31511A0BD69E009712FC /* spo2.png */,
+				945D314F1A0BD253009712FC /* ekg.png */,
+				94167A211A0AF19C00861407 /* placeholder.jpg */,
+				94167A231A0AFAB400861407 /* pulseicon.psd */,
+				941679FC1A0AED2700861407 /* Info.plist */,
+				941679FD1A0AED2700861407 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		94167A141A0AED2700861407 /* Patient MonitorTests */ = {
+			isa = PBXGroup;
+			children = (
+				94167A171A0AED2700861407 /* Patient_MonitorTests.m */,
+				94167A151A0AED2700861407 /* Supporting Files */,
+			);
+			path = "Patient MonitorTests";
+			sourceTree = "<group>";
+		};
+		94167A151A0AED2700861407 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				94167A161A0AED2700861407 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		941679F71A0AED2700861407 /* Patient Monitor */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 94167A1B1A0AED2800861407 /* Build configuration list for PBXNativeTarget "Patient Monitor" */;
+			buildPhases = (
+				941679F41A0AED2700861407 /* Sources */,
+				941679F51A0AED2700861407 /* Frameworks */,
+				941679F61A0AED2700861407 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Patient Monitor";
+			productName = "Patient Monitor";
+			productReference = 941679F81A0AED2700861407 /* Patient Monitor.app */;
+			productType = "com.apple.product-type.application";
+		};
+		94167A101A0AED2700861407 /* Patient MonitorTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 94167A1E1A0AED2800861407 /* Build configuration list for PBXNativeTarget "Patient MonitorTests" */;
+			buildPhases = (
+				94167A0D1A0AED2700861407 /* Sources */,
+				94167A0E1A0AED2700861407 /* Frameworks */,
+				94167A0F1A0AED2700861407 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				94167A131A0AED2700861407 /* PBXTargetDependency */,
+			);
+			name = "Patient MonitorTests";
+			productName = "Patient MonitorTests";
+			productReference = 94167A111A0AED2700861407 /* Patient MonitorTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		941679F01A0AED2700861407 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = team3;
+				TargetAttributes = {
+					941679F71A0AED2700861407 = {
+						CreatedOnToolsVersion = 6.1;
+					};
+					94167A101A0AED2700861407 = {
+						CreatedOnToolsVersion = 6.1;
+						TestTargetID = 941679F71A0AED2700861407;
+					};
+				};
+			};
+			buildConfigurationList = 941679F31A0AED2700861407 /* Build configuration list for PBXProject "Patient Monitor" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 941679EF1A0AED2700861407;
+			productRefGroup = 941679F91A0AED2700861407 /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 940D95711A1E4E1F00CEA9DE /* Products */;
+					ProjectRef = 940D95701A1E4E1F00CEA9DE /* CorePlot.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				941679F71A0AED2700861407 /* Patient Monitor */,
+				94167A101A0AED2700861407 /* Patient MonitorTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		940D95771A1E4E1F00CEA9DE /* CorePlot.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = CorePlot.framework;
+			remoteRef = 940D95761A1E4E1F00CEA9DE /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		940D95791A1E4E1F00CEA9DE /* UnitTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = UnitTests.xctest;
+			remoteRef = 940D95781A1E4E1F00CEA9DE /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		941679F61A0AED2700861407 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9429C1701A2F5FF7001291D4 /* bloodpressicon.png in Resources */,
+				940BDFC51A30BA8F00BF84FC /* expandicon.png in Resources */,
+				9429C17A1A2F60A0001291D4 /* settingsicon.png in Resources */,
+				9429C17F1A2F60C1001291D4 /* SpO2icon.png in Resources */,
+				9429C16B1A2F5FDF001291D4 /* alarmonIcon.png in Resources */,
+				940BDFC71A30BA9900BF84FC /* shrinkicon.png in Resources */,
+				945D31501A0BD253009712FC /* ekg.png in Resources */,
+				945D31521A0BD69E009712FC /* spo2.png in Resources */,
+				9429C1761A2F6040001291D4 /* faranheiticon.png in Resources */,
+				94167A071A0AED2700861407 /* Main.storyboard in Resources */,
+				9429C1781A2F604E001291D4 /* pulseicon.png in Resources */,
+				94167A221A0AF19C00861407 /* placeholder.jpg in Resources */,
+				94167A0C1A0AED2700861407 /* LaunchScreen.xib in Resources */,
+				9429C1821A2F6265001291D4 /* ekgicon.png in Resources */,
+				94167A091A0AED2700861407 /* Images.xcassets in Resources */,
+				9429C1721A2F6014001291D4 /* editicon.png in Resources */,
+				940BDFBF1A2FF4BF00BF84FC /* EKG.csv in Resources */,
+				9429C1801A2F60C1001291D4 /* thermometericon.png in Resources */,
+				945D31541A0BD87F009712FC /* black.jpg in Resources */,
+				940BDFB91A2FE77400BF84FC /* Spo2graphdata.csv in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		94167A0F1A0AED2700861407 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		941679F41A0AED2700861407 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9429844A1A218C8300AC1028 /* Graph.m in Sources */,
+				94167A041A0AED2700861407 /* ViewController.m in Sources */,
+				945CD0071A2E186E001E9214 /* AlarmOptions.m in Sources */,
+				94167A011A0AED2700861407 /* AppDelegate.m in Sources */,
+				945E6F651A242490009923F4 /* TheData.m in Sources */,
+				941679FE1A0AED2700861407 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		94167A0D1A0AED2700861407 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				94167A181A0AED2700861407 /* Patient_MonitorTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		94167A131A0AED2700861407 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 941679F71A0AED2700861407 /* Patient Monitor */;
+			targetProxy = 94167A121A0AED2700861407 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		94167A051A0AED2700861407 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				94167A061A0AED2700861407 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		94167A0A1A0AED2700861407 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				94167A0B1A0AED2700861407 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+		94167A231A0AFAB400861407 /* pulseicon.psd */ = {
+			isa = PBXVariantGroup;
+			children = (
+				94167A241A0AFAB400861407 /* Base */,
+			);
+			name = pulseicon.psd;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		94167A191A0AED2700861407 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		94167A1A1A0AED2700861407 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		94167A1C1A0AED2800861407 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/Patient_Monitor-elmagomosrdnprgribgtjnkojvpu/Build/Products/Debug",
+				);
+				INFOPLIST_FILE = "Patient Monitor/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				New_Setting = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		94167A1D1A0AED2800861407 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/Patient_Monitor-elmagomosrdnprgribgtjnkojvpu/Build/Products/Debug",
+				);
+				INFOPLIST_FILE = "Patient Monitor/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				New_Setting = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		94167A1F1A0AED2800861407 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Patient MonitorTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Patient Monitor.app/Patient Monitor";
+			};
+			name = Debug;
+		};
+		94167A201A0AED2800861407 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Patient MonitorTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Patient Monitor.app/Patient Monitor";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		941679F31A0AED2700861407 /* Build configuration list for PBXProject "Patient Monitor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				94167A191A0AED2700861407 /* Debug */,
+				94167A1A1A0AED2700861407 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		94167A1B1A0AED2800861407 /* Build configuration list for PBXNativeTarget "Patient Monitor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				94167A1C1A0AED2800861407 /* Debug */,
+				94167A1D1A0AED2800861407 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		94167A1E1A0AED2800861407 /* Build configuration list for PBXNativeTarget "Patient MonitorTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				94167A1F1A0AED2800861407 /* Debug */,
+				94167A201A0AED2800861407 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 941679F01A0AED2700861407 /* Project object */;
+}
